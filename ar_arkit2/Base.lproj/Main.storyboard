@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--home-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="home" title="home" id="BV1-FR-VrT" customClass="ViewController" customModule="ARCafe19Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </arscnView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="T6j-jJ-xrN">
+                                <rect key="frame" x="-28" y="398" width="376" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q5a-X3-HHV">
+                                        <rect key="frame" x="10" y="0.0" width="356" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBR-nI-QCX">
+                                                <rect key="frame" x="55" y="8" width="85.5" height="104"/>
+                                                <state key="normal" backgroundImage="harvest_rice_card"/>
+                                                <connections>
+                                                    <action selector="action_button:" destination="BV1-FR-VrT" eventType="primaryActionTriggered" id="eoA-wX-9F8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmg-cu-ohI">
+                                                <rect key="frame" x="150.5" y="8" width="85" height="104"/>
+                                                <state key="normal" backgroundImage="pudding_card"/>
+                                                <connections>
+                                                    <action selector="action_pudding:" destination="BV1-FR-VrT" eventType="primaryActionTriggered" id="F18-cy-ewS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS1-kj-1Av">
+                                                <rect key="frame" x="245.5" y="8" width="85.5" height="104"/>
+                                                <state key="normal" backgroundImage="rice_salad_card"/>
+                                                <connections>
+                                                    <action selector="action_salad:" destination="BV1-FR-VrT" eventType="touchUpInside" id="aFo-UX-Qnb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="55" bottom="8" trailing="25"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="q5a-X3-HHV" secondAttribute="trailing" constant="10" id="3nq-aj-bAS"/>
+                                    <constraint firstAttribute="bottom" secondItem="q5a-X3-HHV" secondAttribute="bottom" id="LxL-WT-KQE"/>
+                                    <constraint firstItem="q5a-X3-HHV" firstAttribute="leading" secondItem="T6j-jJ-xrN" secondAttribute="leading" constant="10" id="T7k-aD-Rka"/>
+                                    <constraint firstItem="q5a-X3-HHV" firstAttribute="centerX" secondItem="T6j-jJ-xrN" secondAttribute="centerX" placeholder="YES" id="UpQ-aY-Sb4"/>
+                                    <constraint firstItem="q5a-X3-HHV" firstAttribute="height" secondItem="T6j-jJ-xrN" secondAttribute="height" id="ZCf-5k-IBD"/>
+                                    <constraint firstAttribute="height" constant="120" id="az4-qn-1sY"/>
+                                    <constraint firstItem="q5a-X3-HHV" firstAttribute="top" secondItem="T6j-jJ-xrN" secondAttribute="top" id="rp2-uC-cKz"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="LX2-Ha-BUq"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YO5-wf-XHG">
+                                <rect key="frame" x="312" y="34" width="91" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset_button:" destination="BV1-FR-VrT" eventType="primaryActionTriggered" id="CLS-wy-Tjd"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rice_salad" translatesAutoresizingMaskIntoConstraints="NO" id="HFt-Qa-Lab">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="633"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="harvest_rice" translatesAutoresizingMaskIntoConstraints="NO" id="A6X-5A-VTn">
+                                <rect key="frame" x="0.0" y="-17" width="320" height="585"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pudding" translatesAutoresizingMaskIntoConstraints="NO" id="v0p-Jo-VNB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="677"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZEO-cx-st5">
+                                <rect key="frame" x="29" y="133" width="261" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="1"/>
+                                <connections>
+                                    <action selector="coupon_act:" destination="BV1-FR-VrT" eventType="primaryActionTriggered" id="DfG-Og-CTR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-Kp-uvI">
+                                <rect key="frame" x="16" y="13" width="39" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="arrow.left" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recipe_back:" destination="BV1-FR-VrT" eventType="primaryActionTriggered" id="Nq2-Ae-CuX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="7FE-la-A4o"/>
+                            <constraint firstItem="T6j-jJ-xrN" firstAttribute="centerX" secondItem="BrB-h1-WRS" secondAttribute="centerX" id="8wc-YS-eKq"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="T6j-jJ-xrN" firstAttribute="leading" secondItem="U0K-SW-4ec" secondAttribute="leadingMargin" constant="-44" id="J5G-Hz-J3Z"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="T6j-jJ-xrN" secondAttribute="bottom" constant="50" id="aNb-32-8Qt"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="top" secondItem="v0p-Jo-VNB" secondAttribute="top" constant="44" id="aOT-RF-6cg"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="v0p-Jo-VNB" secondAttribute="trailing" id="hXT-ey-2Vw"/>
+                            <constraint firstItem="v0p-Jo-VNB" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="hlv-Rw-e5a"/>
+                            <constraint firstItem="v0p-Jo-VNB" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" constant="34" id="s4R-03-A8Y"/>
+                            <constraint firstItem="T6j-jJ-xrN" firstAttribute="centerY" secondItem="BrB-h1-WRS" secondAttribute="centerY" constant="40" id="sDa-fX-UWr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="etq-di-ySm"/>
+                    <connections>
+                        <outlet property="back_button" destination="EFS-Kp-uvI" id="55S-wi-hed"/>
+                        <outlet property="coupon_button" destination="ZEO-cx-st5" id="p0w-l3-YeO"/>
+                        <outlet property="harvest_card" destination="nBR-nI-QCX" id="G6J-R2-uqW"/>
+                        <outlet property="harvest_rice_recipe" destination="A6X-5A-VTn" id="khx-I3-J4W"/>
+                        <outlet property="horizontallyScrollableStackView" destination="q5a-X3-HHV" id="I5U-nB-NJx"/>
+                        <outlet property="pudding_card" destination="Kmg-cu-ohI" id="6yS-g6-WNe"/>
+                        <outlet property="pudding_recipe" destination="v0p-Jo-VNB" id="7bd-YF-Kin"/>
+                        <outlet property="reset_button" destination="YO5-wf-XHG" id="jGJ-dV-mMW"/>
+                        <outlet property="salad_card" destination="KS1-kj-1Av" id="ilg-LB-5y3"/>
+                        <outlet property="salad_recipe" destination="HFt-Qa-Lab" id="bkA-MK-cw5"/>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="view_scroll" destination="T6j-jJ-xrN" id="qKT-sX-scU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572.5" y="163.73239436619718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="503.5" height="572"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="harvest_rice" width="828" height="1792"/>
+        <image name="harvest_rice_card" width="157.5" height="53"/>
+        <image name="pudding" width="828" height="1792"/>
+        <image name="pudding_card" width="157" height="53"/>
+        <image name="rice_salad" width="828" height="1792"/>
+        <image name="rice_salad_card" width="157" height="53"/>
+    </resources>
+</document>
